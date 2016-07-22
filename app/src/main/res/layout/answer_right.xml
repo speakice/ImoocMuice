@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pass_view"
+    android:background="#cc000000"
+    android:gravity="center_horizontal"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:src="@drawable/index_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_main_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="您已经击败全国30.3的玩家"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="答案正确"
+        android:textSize="30dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/game_level_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_current_stage_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_current_song_name_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李杰你好"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖励: "
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <ImageView
+            android:src="@drawable/game_coin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ｘ3"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:background="#cc000000"
+        android:src="@drawable/next_button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageButton
+        android:id="@+id/btn_share_weixin"
+        android:layout_marginTop="10dp"
+        android:background="#cc000000"
+        android:src="@drawable/weixin_button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

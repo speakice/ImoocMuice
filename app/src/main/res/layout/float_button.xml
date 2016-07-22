@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/game_level_title"/>
+        <TextView
+            android:id="@+id/text_current_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_delete_word"
+                android:background="@drawable/delete_button_icon"
+                android:layout_width="65dp"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/game_coin_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_gravity="bottom|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+               android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:text="@integer/pay_delete_answer"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_tip_answer"
+                android:background="@drawable/tip_button_icon"
+                android:layout_width="65dp"
+                android:layout_height="90dp" />
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/game_coin_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_gravity="bottom|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/white"
+                android:text="@integer/pay_tip_answer"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/share_button_icon"/>
+</RelativeLayout>
